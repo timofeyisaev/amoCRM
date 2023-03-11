@@ -1,0 +1,165 @@
+.purpleLight {
+    background-image: url('../images/purple-light.png');
+    background-size: cover;
+    width: 308px;
+    height: 274px;
+    opacity: 3%;
+    position: absolute;
+    top: -154px;
+    left: 602px;
+    z-index: -1;
+    border-radius: 392px;
+    background-color:  rgba(131, 58, 180, 1);
+    filter: blur(4px);
+}
+
+
+.purpleBall {
+    background-image: url('../images/purple-ball.png');
+    background-size: cover;
+    border-radius: 300px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    left: 851px;
+    position: absolute;
+    z-index: -1;
+    filter: drop-shadow(rgba(177, 118, 217, 0.25));
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+    filter: blur(4px);    
+   
+}
+
+.container{
+    color: #E4E5EA;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    margin: 20px;
+    gap: 50px;
+    width: 1300px;
+    height: 73px;
+    position: relative;
+}
+
+.logoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 185px;
+    height: 24px;
+    gap: 15px;
+    
+}
+
+.picContainer{
+    display: flex;
+    justify-content: left;
+    width: 300px;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+@media (max-width: 800px){
+    .logoContainer{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .icons{
+        display: none
+    }
+    .certificates{
+        display: none;
+    }
+    .pages{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+}
+
+.logo1{
+    background-image: url('../images/logo1.png');
+    background-size: cover;
+    width: 35px;
+    height: 24px;
+}
+
+.logo2{
+    background-image: url('../images/logo2.png');
+    background-size: cover;
+    width: 105px;
+    height: 16px;
+}
+
+.logoContainer p{
+    color: #E4E5EA;
+    font-family: 'Montserrat';
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 300;
+}
+
+.pages{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.pages a{
+    color: #E4E5EA;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: medium;
+    font-size: 16px;
+    line-height: 19px;
+    height: 19px;
+}
+
+.phone{
+    color: #E4E5EA;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: medium;
+    font-size: 16px;
+    line-height: 19px;
+    height: 19px;
+    justify-content: right;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    height: 20px;
+}
+
+.telegram{
+    background-image: url('../images/telegramicon.png');
+    background-size: cover;
+    width: 16px;
+    height: 14px;
+}
+
+.phoneIcon{
+    background-image: url('../images/phoneicon.png');
+    background-size: cover;
+    width: 16px;
+    height: 14px;
+}
+
+.whatsapp{
+    background-image: url('../images/whatsappicon.png');
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    fill: solid;
+}

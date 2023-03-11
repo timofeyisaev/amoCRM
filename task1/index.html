@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        p {
+          display: inline;
+          font-size: 40px;
+          margin-top: 30px;
+          padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="days"></p>
+    <p id="hours"></p>
+    <p id="mins"></p>
+    <p id="secs"></p>
+    <h2 id="end"></h2>
+    <script>
+    
+    let countDownDate = new Date("Mar 12, 2023 23:59:52").getTime();
+    let myfunc = setInterval(function() {
+    let now = new Date().getTime();
+    let timeleft = countDownDate - now;
+    let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    document.getElementById("days").innerHTML = days + " дней "
+    document.getElementById("hours").innerHTML = hours + " часов " 
+    document.getElementById("mins").innerHTML = minutes + " минут " 
+    document.getElementById("secs").innerHTML = seconds + " секунд " 
+    if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = "" 
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "Время вышло!";
+    }
+    }, 1000);
+    </script>
+</body>
+</html>

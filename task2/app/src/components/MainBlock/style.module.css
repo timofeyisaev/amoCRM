@@ -1,0 +1,231 @@
+.mainBlockContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));    
+    color: white;
+    padding: 50px 50px;
+    margin: 20px;
+}
+
+
+
+.redBall{
+        background-image: url('../images/red-ball.png');
+        background-size: cover;
+        border-radius: 300px;
+        width: 83px;
+        height: 83px;
+        left: 519px;
+        top: 95px;
+        position: absolute;
+        z-index: -1;
+        filter: blur(1px);
+        filter: drop-shadow(rgba(223, 125, 125, 0.25));
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
+        
+}
+
+.redBallSmall{
+    background-image: url('../images/red-ball-small.png');
+    background-size: cover;
+    border-radius: 300px;
+    width: 28px;
+    height: 28px;
+    left: 851px;
+    top: 547px;
+    position: absolute;
+    z-index: -1;
+    filter: blur(2px);
+    filter: drop-shadow(rgba(223, 125, 125, 0.25));
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) ;
+
+    
+}
+
+.redLight {
+    background-image: url('../images/red-light.png');
+    background-size: cover;
+    top: 251px;
+    left: -102px;
+    width: 311px;
+    height: 311px;
+    opacity: 10%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 392px;
+    background-color:  rgba(150, 26, 26, 1);
+    box-shadow: inset 0px 5px 10px 0px rgba(150, 26, 26, 1);
+    filter: blur(4px);
+    fill: solid;
+}
+
+
+.leftBlock{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.leftInscrOne{
+    width: 362px;
+    height: 116px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #E4E5EA;
+}
+
+.leftInscrTwo{
+    width: 247px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: transparent;
+    background-image: linear-gradient(80deg,#FCB045 24%, #FF3F78 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.leftInscrThree{
+    width: 275px;
+    height: 44px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E5EA;
+    fill: solid;
+    padding-top: 50px;
+}
+
+.rightBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-align: right;
+    gap: 10px;
+    
+}
+
+
+
+.rightInscrOne{
+    width: 291px;
+    height: 44px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(228, 229, 234, 1)
+}
+
+.rightInscrOne span{
+    color: transparent;
+    background-image: linear-gradient(80deg, rgba(253, 29, 29, 1), rgba(252, 176, 69, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+@media(max-width:800px){
+    .mainBlockContainer{
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        min-height: 500px;
+        gap: 100px;
+    }
+
+    .leftBlock{
+        display: flex;
+        flex-direction: column;
+        align-self: left;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+    }
+
+    .rightBlock{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        width: 400px;
+    }
+
+    .rightGrid{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .gridItem{
+        align-self: left;
+    }
+
+    .rightGrid p{
+        display: none;
+    }
+
+    
+}
+
+.rightGrid{
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 40px 26px;
+    padding: 36px 15px;    
+}
+
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 164px;
+    height: 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(228, 229, 234, 1)
+}
+
+.gridItem h3{
+    text-transform: uppercase;
+    
+}
+
+.gridItem p{   
+    color: #E4E5EA;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+
+.rightBlock button{
+    width: 262px;
+    height: 61px;
+    margin-top: 40px;
+    background-color: #4077F3;
+    color: #E4E5EA;
+    font-family: 'Inter';
+    font-style: medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;  
+    cursor: pointer;
+    border: none;
+   
+}

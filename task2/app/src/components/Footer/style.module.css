@@ -1,0 +1,143 @@
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    color: #E4E5EA;
+    padding: 50px 50px;
+    margin: 20px;
+}
+
+@media(max-width: 800px){
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .plug{display: none;}
+    
+    .menu{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 54px;
+        
+    }
+
+    .contacts p{
+        
+        padding: 0px;
+    }
+   
+}
+
+
+.menu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #E4E5EA;
+    
+}
+
+.footerItem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Inter';
+}
+
+.footerItem h3{
+    font-style: bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 5%;
+    color: #656566;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footerItem p{
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 19px;
+    vertical-align: top;
+    color: #E4E5EA;
+}
+
+.plug{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 15px;
+}
+
+#faq{
+gap: 7px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+    font-family: 'Inter';
+}
+
+.contacts h3 {
+        font-style: bold;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 5%;
+        color: #656566;
+        text-align: left;
+        text-transform: uppercase;
+}
+
+.contacts p{
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 19px;
+        vertical-align: top;
+        color: #E4E5EA;
+
+}
+
+.icons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    height: 20px;
+}
+
+.telegram{
+    background-image: url('../images/telegramicon.png');
+    background-size: cover;
+    width: 16px;
+    height: 14px;
+}
+
+.phoneIcon{
+    background-image: url('../images/phoneicon.png');
+    background-size: cover;
+    width: 16px;
+    height: 14px;
+}
+
+.whatsapp{
+    background-image: url('../images/whatsappicon.png');
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    fill: solid;
+}
